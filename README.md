@@ -1,2 +1,2 @@
-# java-tutorials-Dojo
+# java-classes-tutorial
 ADjo Tutorials: 
