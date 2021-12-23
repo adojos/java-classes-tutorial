@@ -1,4 +1,4 @@
-package com.adojos.javaformatters;
+package com.adojos.textformatters;
 
 public class StringFormatter {
 }

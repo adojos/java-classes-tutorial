@@ -1,4 +1,4 @@
-package com.adojos.javaformatters;
+package com.adojos.textformatters;
 
 import java.text.DecimalFormat;
 
