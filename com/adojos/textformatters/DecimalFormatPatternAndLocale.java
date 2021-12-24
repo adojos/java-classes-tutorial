@@ -16,7 +16,7 @@ public class DecimalFormatPatternAndLocale {
         DecimalFormat dFormat = (DecimalFormat) nFormat;
 
         String strFormattedNum = dFormat.format(dbNum);
-        System.out.print("With Locale = " + strFormattedNum + "\n");
+        System.out.print("With ENGLISH Locale = " + strFormattedNum + "\n");
 
         dFormat.applyPattern(strPattern);
         strFormattedNum = dFormat.format(dbNum);
@@ -26,7 +26,7 @@ public class DecimalFormatPatternAndLocale {
         nFormat = NumberFormat.getNumberInstance(Locale.FRANCE);
         dFormat = (DecimalFormat) nFormat;
         strFormattedNum = dFormat.format(dbNum);
-        System.out.print("With Locale = " + strFormattedNum + "\n");
+        System.out.print("With FRANCE Locale = " + strFormattedNum + "\n");
 
         dFormat.applyPattern(strPattern);
         strFormattedNum = dFormat.format(dbNum);
@@ -36,7 +36,7 @@ public class DecimalFormatPatternAndLocale {
         nFormat = NumberFormat.getNumberInstance(Locale.GERMANY);
         dFormat = (DecimalFormat) nFormat;
         strFormattedNum = dFormat.format(dbNum);
-        System.out.print("With Locale = " + strFormattedNum + "\n");
+        System.out.print("With GERMANY Locale = " + strFormattedNum + "\n");
 
         dFormat.applyPattern(strPattern);
         strFormattedNum = dFormat.format(dbNum);
@@ -44,3 +44,11 @@ public class DecimalFormatPatternAndLocale {
 
     }
 }
+
+/*  OUTPUT
+With ENGLISH Locale = 170,180.245
+With Locale & Pattern = 170180.24523
+With FRANCE Locale = 170 180,245
+With Locale & Pattern = 170180,24523
+With GERMANY Locale = 170.180,245
+With Locale & Pattern = 170180,24523 */
