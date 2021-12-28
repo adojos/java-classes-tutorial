@@ -13,7 +13,7 @@ public class DecimalFormatPatternAndLocale {
         String strPattern = "#.#####";
 
         NumberFormat nFormat = NumberFormat.getNumberInstance(Locale.ENGLISH);
-        DecimalFormat dFormat = (DecimalFormat) nFormat;
+        DecimalFormat dFormat = (DecimalFormat) nFormat;    // cast NumberFormat into DecimalFormat
 
         String strFormattedNum = dFormat.format(dbNum);
         System.out.print("With ENGLISH Locale = " + strFormattedNum + "\n");
