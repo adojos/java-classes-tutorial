@@ -1,4 +1,4 @@
-package com.adojos.textformatters;
+package com.adojos.textformatters.decimalformat;
 
 import java.text.DecimalFormat;
 
@@ -51,10 +51,12 @@ public class DecimalFormatter {
 
 }
 
-    /* OUTPUT
+    /*
+    OUTPUT
     170180.24523 -> 170180.24523
     170180.24523 -> 170180.245
     170180.24523 -> 170180.245230
     170180.24523 -> 170180
     170180.24523 -> 0170180.245
-    170180.24523 -> 17018024.52% */
+    170180.24523 -> 17018024.52%
+    */

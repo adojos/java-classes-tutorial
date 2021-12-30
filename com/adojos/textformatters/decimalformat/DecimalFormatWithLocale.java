@@ -1,4 +1,4 @@
-package com.adojos.textformatters;
+package com.adojos.textformatters.decimalformat;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -14,8 +14,7 @@ public class DecimalFormatWithLocale {
 
         NumberFormat nFormat = NumberFormat.getNumberInstance(Locale.ENGLISH);
         String strOptionalInfo = Locale.ENGLISH.getDisplayName() + " ("+Locale.ENGLISH.toLanguageTag()+")";
-//        nFormat.setMinimumFractionDigits(5);
-//        nFormat.setMinimumIntegerDigits(7);
+
         DecimalFormat dFormat = (DecimalFormat) nFormat;    // cast NumberFormat into DecimalFormat
         String strFormattedNum = dFormat.format(dbNum);
         System.out.println(strFormattedNum + " - " + strOptionalInfo);
