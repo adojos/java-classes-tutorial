@@ -2,7 +2,6 @@ package com.adojos.textformatters.decimalformat;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
-import java.util.Locale;
 
 public class DecimalFormatAndFormatSymbols {
 
@@ -10,7 +9,6 @@ public class DecimalFormatAndFormatSymbols {
 
         double dbNum = 170180.24551D;
         String strPattern = "\u00A4#,###.###";
-//        String strPattern = "#,###.###";
 
         DecimalFormatSymbols dFSymbols = new DecimalFormatSymbols();
         dFSymbols.setDecimalSeparator('-');
