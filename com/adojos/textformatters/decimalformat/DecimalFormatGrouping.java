@@ -8,7 +8,6 @@ public class DecimalFormatGrouping {
     public static void main(String[] args) {
 
         double dbNum = 170180.24551D;
-
         DecimalFormat dFormat = new DecimalFormat();
         dFormat.setGroupingSize(4);
 
